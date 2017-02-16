@@ -108,7 +108,6 @@
           margin: 0; } }
       .content-input form .form-group .num-group .num {
         width: 20%;
-        text-indent: 50px;
         border: 1px solid #ccc;
         border-radius: 3px; }
       @media (max-width: 768px) {
