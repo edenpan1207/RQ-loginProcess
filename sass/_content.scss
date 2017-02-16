@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* index.html's css*/
+
+.content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content-title {
+   i {
+   	display: none;
+   	@include ipad {
+   		display: inline-block;
+   		padding-top: 18px;
+   		padding-right: 15px;
+   	}
+   }
+   span {
+   	@include ipad {
+   		display: none;
+   	}
+   }
+}
+
+
+/* arrow for step process */
+
+.arrow {
+    width: 21%;
+    height: 50px;
+    background-color: rgba(55, 118, 29, 0.3);
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 45px;
+    >a {
+        color: #37761D;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    &:hover {
+        border-bottom: 5px solid #37761D;
+    }
+    @include l-phone {
+    	width: 17%;
+    } 
+}
+
+.arrow:after {
+    content: '';
+    position: absolute;
+    right: -22px;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left: 12px solid rgba(55, 118, 29, 0.3);
+}
+
+.arrow-active {
+    border-bottom: 5px solid #37761D;
+}
+
+.arrow-none:after {
+    border: 0;
+}
+
+.content-input {
+    padding-top: 15px;
+    position: relative; 
+    .fb-input {
+        display: block;
+    }
+    form {
+        .form-group {
+            margin-bottom: 10px;
+            .label-mail {
+                padding-right: 30px;
+            }
+            .label-pass {
+                padding-right: 60px;
+            }
+            .label-sex {
+                padding-right: 30px;
+                @include ipad {
+                    display: block;
+                }
+            }
+            .mail,
+            .password {
+                width: 40%;
+                height: 35px;
+                text-indent: 5px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                @include ipad {
+                    width: 100%;
+                }
+            }
+            .heart-qa {
+            	@include ipad {
+            		display: block;
+            		margin-left: -15px;
+            		margin-top: 5px;
+            	}
+            }
+            .num-group {
+                display: inline-block;
+                margin-top: 10px;
+                @include ipad {
+                	margin: 0;
+                }
+                .num {
+                    width: 20%;
+                    text-indent: 50px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;
+                }
+                @include ipad {
+                    display: block;
+                }
+            }
+            .press {
+                background-color: rgba(55, 118, 29, 1);
+                border: 1px solid rgba(55, 118, 29, 1);
+                border-radius: 50px;
+                padding: 5px 10px;
+                margin-left: 95px;
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                @include ipad {
+                    margin: 0;
+                }
+                &:hover {
+                    background-color: rgba(55, 118, 29, 0.7);
+                    border: 1px solid rgba(55, 118, 29, 0.7);
+                }
+            }
+        }
+    }
+}
+
+
+/* input.html's panel */
+
+.panel {
+    padding-left: 0;
+    padding-right: 0;
+    .panel-pace {
+    	float: left;
+    }
+    .panel-back {
+    	float: right
+    }
+}
+.panel-heading {
+	min-height: 40px;
+}
+
+/* input.html's submit button */
+
+.next-step {
+    width: 100%;
+    background-color: rgba(55, 118, 29, 1);
+    border: 1px solid rgba(55, 118, 29, 1);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+    &:hover {
+        background-color: rgba(55, 118, 29, 0.7);
+        border: 1px solid rgba(55, 118, 29, 0.7);
+    }
+}
+
+
+/* heart.html's icon */
+
+.fa {
+    padding-left: 20px;
+}
+
+.info-quote {
+    padding-top: 10px;
+    font-size: 15px;
+    span {
+        color: red;
+    }
+    .link-pace {
+        border-bottom: 2px solid #f05f40;
+    }
+}
+
+.content-input {
+    position: relative;
+    .hover-text {
+        position: absolute;
+        top: -25px;
+        border: 1px solid #162118;
+        border-radius: 3px;
+        padding: 3px;
+        background-color: #162118;
+        color: #fff;
+    }
+}
+
+.text-footer {
+    line-height: 1.5em;
+    p {
+        font-size: 15px;
+        margin-bottom: 20px;
+        a {
+            color: #37761D;
+        }
+    }
+}
+
+/* running.html's select option */
+.choose {
+	@include ipad {
+		display: block;
+	}
+}
+
+
+/* pace.html's validation */
+
+.name-feedback {
+    color: red;
+}
+
+
+/* pace.html's input box and placeholder*/
+
+.num {
+	width: 10%;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+

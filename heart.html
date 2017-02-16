@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="container">
+                this is header
+            </div>
+        </div>
+        <div class="content">
+            <div class="crumb container">
+                <ol class="breadcrumb">
+                    <li><a href="#">首頁</a></li>
+                    <li class="active">請輸入跑步心率</li>
+                </ol>
+            </div>
+            <div class="content-title container">
+                <div class="arrow">
+                <a href=""><i class="fa fa-user" aria-hidden="true"></i><span>個人資料</span></a>
+                </div>
+                 <div class="arrow arrow-active">
+                <a href=""><i class="fa fa-heartbeat" aria-hidden="true"></i><span>跑步心率</span></a>
+                </div>
+                 <div class="arrow">
+                <a href=""><i class="fa fa-trophy" aria-hidden="true"></i><span>能力評估</span></a>
+                </div>
+                 <div class="arrow arrow-none">
+                <a href=""><i class="fa fa-upload" aria-hidden="true"></i><span>數據上傳</span></a>
+                </div>
+                <hr>
+            </div>
+            <div class="panel panel-default container">
+                <div class="panel-heading">請輸入跑步心率</div>
+                <div class="panel-body content-input">
+                    <form action="file:///C:/Users/midori/Desktop/RQ-running%20detect/running.html">
+                        <div class="row">
+                            <div class="form-group col-md-9 col-md-offset-1">
+                                <label for="number" class="label-mail">跑步最大心率</label>
+                                <input type="number" name="number" id="number" placeholder="跑步最大心率(bpm)" class="mail" value="185" required>
+                               
+                                <a href="#" class="heart-qa"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <br>
+                            <div class="form-group col-md-9 col-md-offset-1">
+                                <label for="number" class="label-mail">跑步安靜心率</label>
+                                <input type="number" name="number" id="number" placeholder="跑步安靜心率值(bpm)" class="mail" value="65" required>
+                                
+                                <a href="#" class="heart-qa"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                            </div>
+                            <br>
+                            <div class="form-group col-md-9 col-md-offset-1">
+                                <p class="info-quote">上述為公式計算出來的心率，<span>建議之後可手動調整為實際測量的真實數據</span>，才可以讓ＲＱ上的所有分析功能更符合您的真實訓練狀況。</p>
+                                <input type="submit" id="submit" class="next-step" value="下一步">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-footer container">
+            <p>「心率」為跑步中一個非常具有參考價值的數據，也是ＲＱ進行科學化分析的重要數據之一。在這裡要強調的是每分鐘心跳數(beat per minute, bpm)這個數值對跑者本身的意義並不大，同樣是160 bpm(每分鐘心跳165次)，對於最大心率200 bpm的人來說，這個強度還在非常輕鬆(有氧)的區間，但對於最大心率為170 bpm的人來說，當心率達到165 bpm時代表強度已經非常高了！</p>
+
+            <p>對我們有意義並非心率值，而是「心率區間」。心率區間可由最大心率（或儲備心率）的百分比計算出來，所以我們必須要知道您的最大心率。藉由最大心率來定義心率區間之後才能發揮出心率最大的意義，讓每一個科學分析功能更加貼近您真實狀況。</p>
+
+            <p>參考文章：<a href="https://www.runningquotient.com/article/single/9" target="_blank">【訓練使用的跑步最大心率建議要實際測量】</a>by 徐國峰</p>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                this is footer
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
