@@ -10,6 +10,14 @@
   padding-top: 30px;
   padding-bottom: 30px; }
 
+.content-title p {
+  color: #31708f;
+  background-color: #d9edf7;
+  border: 1px solid #bce8f1;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 15px; }
+
 .content-title i {
   display: none; }
   @media (max-width: 768px) {
