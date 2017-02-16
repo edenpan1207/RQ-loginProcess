@@ -148,6 +148,7 @@
                 font-weight: bold;
                 @include ipad {
                     margin: 0;
+                    width: 100%;
                 }
                 &:hover {
                     background-color: rgba(55, 118, 29, 0.7);

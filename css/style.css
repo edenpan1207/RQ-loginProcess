@@ -124,7 +124,8 @@
       font-weight: bold; }
       @media (max-width: 768px) {
         .content-input form .form-group .press {
-          margin: 0; } }
+          margin: 0;
+          width: 100%; } }
       .content-input form .form-group .press:hover {
         background-color: rgba(55, 118, 29, 0.7);
         border: 1px solid rgba(55, 118, 29, 0.7); }
