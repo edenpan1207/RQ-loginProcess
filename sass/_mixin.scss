@@ -1,3 +1,8 @@
 @mixin paddingL {
 	padding-left: 200px;
 }
+
+@mixin boxOutLine {
+	border: 1px solid #ccc;
+    border-radius: 3px;
+}
