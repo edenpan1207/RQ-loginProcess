@@ -140,8 +140,8 @@
           margin: 0;
           width: 100%; } }
       .content-input form .form-group .press:hover {
-        background-color: rgba(55, 118, 29, 0.7);
-        border: 1px solid rgba(55, 118, 29, 0.7); }
+        background-color: #459725;
+        border: 1px solid #459725; }
 
 /* pace.html's panel */
 .panel {
@@ -166,8 +166,8 @@
   color: #fff;
   font-weight: bold; }
   .next-step:hover {
-    background-color: rgba(55, 118, 29, 0.7);
-    border: 1px solid rgba(55, 118, 29, 0.7); }
+    background-color: #459725;
+    border: 1px solid #459725; }
 
 /* heart.html's icon */
 .fa {
