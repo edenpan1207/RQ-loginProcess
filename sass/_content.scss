@@ -1,11 +1,14 @@
 /* 可忽略 */
+
 * {
     box-sizing: border-box;
 }
+
 .wrap {
     width: 100%;
     margin: 0 auto;
 }
+
 
 /* index.html's css*/
 
@@ -14,55 +17,67 @@
     padding-bottom: 30px;
 }
 
+// 新增ul li 刪除p
 .content-title {
-    p {
+    ul {
+        //
+        list-style: none;
+        padding:0;
+
+        /* p {
         color: #31708f;
         background-color: #d9edf7;
         border: 1px solid #bce8f1;
         border-radius: 5px;
         font-weight: bold;
         padding: 15px;
+    }*/
+        i {
+            display: none;
+            @include ipad {
+                display: inline-block;
+                padding-top: 18px;
+                padding-right: 15px;
+            }
+        }
+        span {
+            @include ipad {
+                display: none;
+            }
+        }
     }
-   i {
-   	display: none;
-   	@include ipad {
-   		display: inline-block;
-   		padding-top: 18px;
-   		padding-right: 15px;
-   	}
-   }
-   span {
-   	@include ipad {
-   		display: none;
-   	}
-   }
 }
 
 
 /* arrow for step process */
 
-.arrow {
+.arrow { 
+    //
+    float: left;
     width: 21%;
     height: 50px;
     background-color: rgba(55, 118, 29, 0.3);
     border-radius: 5px 5px 0 0;
     position: relative;
-    display: inline-block;
     margin-right: 20px;
+    margin-bottom: 20px;
     text-align: center;
     line-height: 45px;
     >a {
+        //
+        display: block; 
+        text-decoration: none;
         color: #37761D;
         font-size: 15px;
         font-weight: bold;
-        text-decoration: none;
     }
-    &:hover {
+   /* &:hover {
         border-bottom: 5px solid #37761D;
-    }
+    }*/
     @include l-phone {
-    	width: 17%;
-    } 
+        // change _rwd's content
+        width: 17%;
+    }
 }
 
 .arrow:after {
@@ -82,18 +97,32 @@
         color: #fff;
     }
 }
+
 .arrow-active:after {
     border-left: 12px solid rgba(55, 118, 29, 0.7);
 }
-
 
 .arrow-none:after {
     border: 0;
 }
 
+//
+.cursor-not-allow {
+    @include notAllowed
+}
+//
+.hover-show:hover {
+    @include aHover
+}
+
+.cursor-initial {
+    cursor: default;
+}
+
+
 .content-input {
     padding-top: 15px;
-    position: relative; 
+    position: relative;
     .fb-input {
         display: block;
     }
@@ -117,24 +146,22 @@
                 width: 40%;
                 height: 35px;
                 text-indent: 5px;
-                @include boxOutLine
-                @include ipad {
+                @include boxOutLine @include ipad {
                     width: 100%;
                 }
             }
-
             .heart-qa {
-            	@include ipad {
-            		display: block;
-            		margin-left: -15px;
-            		margin-top: 5px;
-            	}
+                @include ipad {
+                    display: block;
+                    margin-left: -15px;
+                    margin-top: 5px;
+                }
             }
             .num-group {
                 display: inline-block;
                 margin-top: 10px;
                 @include ipad {
-                	margin: 0;
+                    margin: 0;
                 }
                 .num {
                     width: 20%;
@@ -174,10 +201,10 @@
 .panel {
     padding-left: 0;
     padding-right: 0;
-
 }
+
 .panel-heading {
-	min-height: 40px;
+    min-height: 40px;
     > a {
         padding-right: 5px;
         > i {
@@ -185,6 +212,7 @@
         }
     }
 }
+
 
 /* next step & confirm button */
 
@@ -245,17 +273,17 @@
     }
 }
 
+
 /* running.html's select option */
+
 .choose {
-    @include boxOutLine
-	@include ipad {
-		display: block;
-	}
+    @include boxOutLine @include ipad {
+        display: block;
+    }
 }
 
 .date {
-    @include boxOutLine
-    @include ipad {
+    @include boxOutLine @include ipad {
         display: block;
     }
 }
@@ -271,10 +299,7 @@
 /* pace.html's input box and placeholder*/
 
 .num {
-	width: 10%;
+    width: 10%;
     text-align: right;
     @include boxOutLine
 }
-
-
-

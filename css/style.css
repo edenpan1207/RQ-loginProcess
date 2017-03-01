@@ -12,45 +12,50 @@
   padding-top: 30px;
   padding-bottom: 30px; }
 
-.content-title p {
-  color: #31708f;
-  background-color: #d9edf7;
-  border: 1px solid #bce8f1;
-  border-radius: 5px;
-  font-weight: bold;
-  padding: 15px; }
-
-.content-title i {
-  display: none; }
+.content-title ul {
+  list-style: none;
+  padding: 0;
+  /* p {
+        color: #31708f;
+        background-color: #d9edf7;
+        border: 1px solid #bce8f1;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 15px;
+    }*/ }
+  .content-title ul i {
+    display: none; }
+    @media (max-width: 768px) {
+      .content-title ul i {
+        display: inline-block;
+        padding-top: 18px;
+        padding-right: 15px; } }
   @media (max-width: 768px) {
-    .content-title i {
-      display: inline-block;
-      padding-top: 18px;
-      padding-right: 15px; } }
-
-@media (max-width: 768px) {
-  .content-title span {
-    display: none; } }
+    .content-title ul span {
+      display: none; } }
 
 /* arrow for step process */
 .arrow {
+  float: left;
   width: 21%;
   height: 50px;
   background-color: rgba(55, 118, 29, 0.3);
   border-radius: 5px 5px 0 0;
   position: relative;
-  display: inline-block;
   margin-right: 20px;
+  margin-bottom: 20px;
   text-align: center;
-  line-height: 45px; }
+  line-height: 45px;
+  /* &:hover {
+        border-bottom: 5px solid #37761D;
+    }*/ }
   .arrow > a {
+    display: block;
+    text-decoration: none;
     color: #37761D;
     font-size: 15px;
-    font-weight: bold;
-    text-decoration: none; }
-  .arrow:hover {
-    border-bottom: 5px solid #37761D; }
-  @media (max-width: 568px) {
+    font-weight: bold; }
+  @media (max-width: 612px) {
     .arrow {
       width: 17%; } }
 
@@ -74,6 +79,15 @@
 
 .arrow-none:after {
   border: 0; }
+
+.cursor-not-allow {
+  cursor: not-allowed; }
+
+.hover-show:hover {
+  border-bottom: 5px solid #37761D; }
+
+.cursor-initial {
+  cursor: default; }
 
 .content-input {
   padding-top: 15px;

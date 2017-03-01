@@ -6,3 +6,11 @@
 	border: 1px solid #ccc;
     border-radius: 3px;
 }
+
+@mixin notAllowed {
+	cursor: not-allowed;
+}
+
+@mixin aHover {
+	border-bottom: 5px solid #37761D;
+}
